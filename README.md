@@ -1,6 +1,8 @@
 # WineBot - A web app wine recommendation system :wine_glass: 
 
 Web-based wine review & recommendation system using Django and Scikit-learn.
+[Click here to the web app](http://dylankuo.pythonanywhere.com/reviews/)
+
 
 ### Technologies used:
 >* Django+Bootstrap
@@ -50,6 +52,9 @@ https://localhost:8000/reviews
 ### Usage
 
 1. Register an account or log in an exisiting account.
+![The latest review list](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/1.jpg)
+
+
 2. Go to wine list, leave a review and score.
 3. Click on the **Get Wine Suggestions!** button and you will be provided a list of wine suggestions by the algorithm.
 
@@ -58,4 +63,8 @@ https://localhost:8000/reviews
 This webapp can be a superb recommender without being an real wine expert! It just needs to find a person (other users on the webapp) with similar preferences to our friend. Then ask the second person for his favorite wines and suggest them to our first friend, not including those that our first friend have already tried. 
 
 In order to do this task, you need to leave at least one review and give it a score (if not, the app will just recommend the items from all users). The app will pre-cluster all the users in the system by its wine reviews scores. By doing so we will have groups (clusters) of similar users. Then, when a user asks for recommendations, we will look for them in the cluster this user is in. (all the users in that cluster share the similar taste.) The app will provide the user suggestions other users in the same cluster have.
+
+
+### Deployment
+* [Pythonanywhere](https://www.pythonanywhere.com/) - The server with full python environment
 
