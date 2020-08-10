@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+<div class="d-flex justify-content-center mb-5">
+    <h1>Wine list</h1>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+{% if wine_list %}
+<div class="row container text-center">
+    {% for wine in wine_list %}
+    <div class="col-xs-2 col-md-4 col-lg-3 form-group ">
+        <h4><a href="{% url 'reviews:wine_detail' wine.id %}">
+        {{ wine.name }}
+        </a></h4>
+        <h5>{{ wine.review_set.count }} reviews</h5>
+        {% if wine.average_rating %}
+            <p class="text-rating">Rating: {{ wine.average_rating | floatformat }} </p>
+        {% else %}
+        <p class="text-no-rating">No Rating Yet</p>
+        {% endif %}        
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+    <p>No wines are available.</p>
+{% endif %}
+{% endblock %}

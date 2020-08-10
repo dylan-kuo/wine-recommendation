@@ -1,0 +1,24 @@
+h1 , h2  {
+    color: #B11226;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+a {
+    color: rgba(15, 16, 90, 0.479);
+  }
+
+.text-rating {
+    color: #0F9D58;
+    font: bold 15px 'Noto Sans JP', sans-serif;
+}
+
+.text-no-rating {
+    color: #DB4437;
+    font:  bold 15px 'Noto Sans JP', sans-serif;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+

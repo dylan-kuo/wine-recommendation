@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<h2>{{ wine.name }}</h2>
+<h5>{{ wine.review_set.count }} Reviews </h5>
+<h5>Average Rating: {{ wine.average_rating | floatformat }}</h5>
+{% endblock %}
+
+{% block content %}
+<h3>Recent reviews</h3>
+
+{% if wine.review_set.all %}
+<div class="w-100 p-3" style="background-color: #eee;">
+    {% for review in wine.review_set.all %}
+    <div>
+        <em>{{ review.comment }}</em>
+        <h6 style="color:rosybrown;">Rated {{ review.rating }} of 5 by {{ review.user_name }}</h6>
+        <h5><a href="{% url 'reviews:review_detail' review.id %}">
+        Read more
+        </a></h5>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p>No reviews for this wine yet</p>
+{% endif %}
+
+<h3>Add your review</h3>
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'reviews:add_review' wine.id %}" method="post">
+    {% csrf_token %}    
+    {{ form.as_p }}    
+    <button type="submit" class="btn btn-primary">Add</button>        
+</form>
+{% endblock %}

@@ -1,0 +1,7 @@
+Django~=3.1
+numpy~=1.19.1
+Pandas~=1.1.0
+SciPy~=1.5.2
+Scikit-learn~=0.23.2
+django-bootstrap4~=2.2.0
+django-registration-redux~=2.8

@@ -1,0 +1,62 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'reviews/reviews.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="navbar-collapse collapse w-100 order-1 dual-collapse2">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="nav-link bg-info text-white ml-2" href="https://github.com/dylan-kuo">See Author's GitHub</a>
+              </li> 
+              <li class="nav-item home">
+                  <a class="nav-link text-light ml-2" href="{% url 'reviews:review_list' %}">Home</a>
+              </li>
+              <li class="nav-item about">
+                  <a class="nav-link text-light ml-2" href="{% url 'reviews:wine_list' %}">Wine list</a>
+              </li>
+          </ul>
+      </div>
+      <div class="mx-auto order-0 order-lg-2">
+          <a class="navbar-brand mx-auto" href="{% url 'reviews:review_list' %}">WineBot &#x1F377; Wine Recommender</a>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+          {% if user.is_authenticated %} 
+              <li class="nav-item">
+                <a class="nav-link bg-danger text-white mr-2" href="{% url 'reviews:user_recommendation_list' %}">Get Wine Suggestions!</a>
+              </li>             
+              <li class="nav-item">
+                <a class="nav-link text-light mr-2" href="{% url 'reviews:user_review_list' user.username %}">{{ user.username }}'s reviews</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light mr-2" href="{% url 'logout' %}">Logout</a>
+              </li>
+          {% else %}
+              <li class="nav-item">
+                  <a class="nav-link text-light mr-2" href="{% url 'login' %}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning mr-2" href="/accounts/register">Register</a>
+              </li>
+          {% endif %}         
+          </ul>
+      </div>
+  </nav>
+</header>
+
+<body>
+<div class="container h-100 d-flex justify-content-center">
+    <div style="background:transparent !important" class="jumbotron jumbotron-fluid">
+        <h1>{% block title %}(no title){% endblock %}</h1>
+        {% block content %}(no content){% endblock %}
+    </div>
+</div>
+</body>
