@@ -51,16 +51,16 @@ https://localhost:8000/reviews
 
 ### Usage
 
-1. Register an account or log in an exisiting account.
+**1. Register an account or log in an exisiting account.**
 
 ![The latest review list](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/1.jpg)
 ![Register an account](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/2.jpg)
 
-2. Go to wine list, leave a review and score.
+**2. Go to wine list, leave a review and score.**
 
 ![Review & Score](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/3.jpg)
 
-3. Click on the **Get Wine Suggestions!** button and you will be provided a list of wine suggestions by the algorithm.
+**3. Click on the **Get Wine Suggestions!** button and you will be provided a list of wine suggestions by the algorithm.**
 
 ![Get recommendations](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/4.jpg)
 ---
