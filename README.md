@@ -71,5 +71,5 @@ In order to do this task, you need to leave at least one review and give it a sc
 
 
 ### Deployment
-* [Pythonanywhere](https://www.pythonanywhere.com/) - The server with full python environment
+* [Wine Recommender Web App](http://dylankuo.pythonanywhere.com/reviews/) 
 
