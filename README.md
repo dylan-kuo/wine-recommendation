@@ -49,20 +49,20 @@ https://localhost:8000/reviews
 ```
 
 
-### Usage
+### Usage <br>
 
-**1. Register an account or log in an exisiting account.**
+**1. Register an account or log in an exisiting account.** <br>
 
 ![The latest review list](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/1.jpg)
-![Register an account](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/2.jpg)
+![Register an account](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/2.jpg) <br>
 
-**2. Go to wine list, leave a review and score.**
+**2. Go to wine list, leave a review and score.** <br>
 
-![Review & Score](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/3.jpg)
+![Review & Score](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/3.jpg) <br>
 
 **3. Click on the **Get Wine Suggestions!** button and you will be provided a list of wine suggestions by the algorithm.**
 
-![Get recommendations](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/4.jpg)
+![Get recommendations](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/4.jpg) <br>
 ---
 #### The logic behind the clustering algorithms (K-means) for the recommendation system
 This webapp can be a superb recommender without being an real wine expert! It just needs to find a person (other users on the webapp) with similar preferences to our friend. Then ask the second person for his favorite wines and suggest them to our first friend, not including those that our first friend have already tried. 
