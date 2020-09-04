@@ -49,7 +49,7 @@ https://localhost:8000/reviews
 ```
 
 
-### Usage <br>
+### Usage <br><br>
 
 **1. Register an account or log in an exisiting account.** <br>
 
