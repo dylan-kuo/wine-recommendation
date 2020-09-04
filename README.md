@@ -58,7 +58,7 @@ https://localhost:8000/reviews
 
 **2. Go to wine list, leave a review and score.** <br>
 
-![Review & Score](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/3.jpg) <br>
+![Review & Score](https://github.com/dylan-kuo/wine-recommendation/blob/master/winebot/3.jpg) <br><br>
 
 **3. Click on the **Get Wine Suggestions!** button and you will be provided a list of wine suggestions by the algorithm.**
 
