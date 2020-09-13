@@ -48,7 +48,7 @@ python manage.py runserver
 https://localhost:8000/reviews
 ```
 
-### How it works:
+## How it works:
 This Recommender System (I call it WineBot) uses machine learning to determine which wine a user is most likely to try and serve them more of it, by finding wines that are liked by people with similar wine preferences.
 
 - When users open WineBot for the first time, they are shown a list of 12 latest wine reviews & scores.
