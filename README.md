@@ -1,5 +1,5 @@
 # WineBot - A web app wine recommender system :wine_glass: 
-**A Machine Learning Application**
+**Machine Learning Application**
 
 Web-based wine review & recommender system using Django and Scikit-learn.
 [Click here to the web app](http://dylankuo.pythonanywhere.com/reviews/)
